@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Index Pos</title>
+    <style>
+      body {
+        font-family: monospace;
+        text-align: center;
+      }
+      .container {
+        width: 200px;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .header h1 {
+        font-size: 16px;
+        margin: 0;
+      }
+      .details {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+      .details p {
+        margin: 3px 0;
+      }
+      .Order {
+        border: 1px solid black;
+        border-style: dashed;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .product {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        margin-bottom: 5px;
+        align-items: flex-start;
+      }
+      .p-name {
+        font-weight: bold;
+      }
+      .totals {
+        text-align: left;
+        margin-top: 10px;
+        font-size: 12px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        border-left: 0px;
+        border-right: 0px;
+        border-style: dashed;
+      }
+      .total_div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3px 0px 3px 0px;
+      }
+      .barcode {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+      }
+      .header_item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Index Pos</h1>
+        <p>NAZIMABAD - KARACHI</p>
+        <p>Gst#12-02-9999-124-64</p>
+      </div>
+      <div class="details">
+        <p><strong>Invoice#:</strong> 123456</p>
+        <p><strong>Transaction No.:</strong> 04-7587089</p>
+        <p><strong>Transaction Date:</strong> Nov 25, 2021 3:10 PM</p>
+        <p><strong>User:</strong> 43655</p>
+        <p><strong>User Name:</strong> Basit</p>
+        <p><strong>POS ID:</strong> NZM-SAL-22</p>
+      </div>
+      <div class="product">
+        <div class="header_item">
+          <span>QTY</span>
+          <span>PRICE</span>
+          <span>DISCOUNT</span>
+          <span>TOTAL</span>
+        </div>
+      </div>
+      <p class="Order">Order Details</p>
+
+      <!-- Products -->
+
+      <div class="product">
+        <span class="p-name">Bake Parlor Bread Small</span>
+        <div class="header_item">
+          <span>1 x </span>
+          <span>59.00</span>
+          <span>0.00</span>
+          <span>Rs59.00</span>
+        </div>
+      </div>
+      <div class="product">
+        <span class="p-name">Bake Parlor Bread Small</span>
+        <div class="header_item">
+          <span>1 x </span>
+          <span>59.00</span>
+          <span>0.00</span>
+          <span>Rs59.00</span>
+        </div>
+      </div>
+      <div class="product">
+        <span class="p-name">Bake Parlor Bread Small</span>
+        <div class="header_item">
+          <span>1 x </span>
+          <span>59.00</span>
+          <span>0.00</span>
+          <span>Rs59.00</span>
+        </div>
+      </div>
+      <div class="product">
+        <span class="p-name">Bake Parlor Bread Small</span>
+        <div class="header_item">
+          <span>1 x </span>
+          <span>59.00</span>
+          <span>0.00</span>
+          <span>Rs59.00</span>
+        </div>
+      </div>
+      <div class="product">
+        <span class="p-name">Bake Parlor Bread Small</span>
+        <div class="header_item">
+          <span>1 x </span>
+          <span>59.00</span>
+          <span>0.00</span>
+          <span>Rs59.00</span>
+        </div>
+      </div>
+
+      <!-- Totals -->
+      <div class="totals">
+        <div class="total_div">
+          <span class="p-name">Total:</span>
+          <span>Rs751.00</span>
+        </div>
+        <div class="total_div">
+          <span class="p-name">Discount:</span>
+          <span>Rs751.00</span>
+        </div>
+        <div class="total_div">
+          <span class="p-name">Tax:</span>
+          <span>Rs751.00</span>
+        </div>
+        <div class="total_div p-name">
+          <h2>Total:</h2>
+          <h2>Rs751.00</h2>
+        </div>
+      </div>
+
+      <!-- Barcode -->
+      <div class="barcode">
+        <p>Barcode: 123456 7890</p>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>Thank you for shopping at Index!</p>
+        <p>Powered by Index</p>
+      </div>
+    </div>
+  </body>
+</html>
